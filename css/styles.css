@@ -26,7 +26,9 @@
   --primary-color-background: #4d5ae5;
 }
 
-/* Hiden elements */
+/*===================
+ Hiden elements 
+ ====================*/
 
 .visually-hidden {
   position: absolute;
@@ -42,7 +44,9 @@
   overflow: hidden;
 }
 
-/* Display/margin-resets */
+/*===================== 
+Display/margin-resets 
+=====================*/
 
 img {
   display: block;
@@ -119,7 +123,7 @@ body {
   align-items: center;
 }
 
-/* Navigation */
+/* ============== Navigation =============*/
 
 .header-logo {
   font-family: var(--logo-font, sans-serif);
@@ -181,13 +185,20 @@ body {
   color: var(--color-ocean);
 }
 
-/* Hero */
+/* ============== Hero ============== */
 
 .hero-container {
 }
 .hero-section {
+  width: 1440px;
+  margin: 0 auto;
   background-color: var(--color-navy-blue);
   padding: 188px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-invite {
@@ -223,7 +234,7 @@ body {
   background-color: var(--color-ocean);
 }
 
-/* features-section */
+/* ============== Features-section =================*/
 
 .features-section {
 }
@@ -236,6 +247,18 @@ body {
 
 .features-item {
   flex-basis: calc((100% - 24px * 3) / 4);
+}
+.features-icon-field {
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-cloud);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.features-icon {
 }
 
 .features-name {
@@ -263,7 +286,9 @@ body {
   border: 1px solid var(--color-cornflower);
 }
 
-/* Team members setion */
+/* ==============
+ Team members setion 
+ ================*/
 
 .cards {
   background-color: var(--color-cloud);
