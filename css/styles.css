@@ -117,6 +117,8 @@ body {
 
 .header {
   border-bottom: 1px solid var(--color-cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -227,6 +229,7 @@ body {
   min-height: 56px;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .btn:hover,
 .btn:focus,
@@ -286,9 +289,7 @@ body {
   border: 1px solid var(--color-cornflower);
 }
 
-/* ==============
- Team members setion 
- ================*/
+/* ============== Team members setion  ================*/
 
 .cards {
   background-color: var(--color-cloud);
@@ -323,9 +324,60 @@ body {
 
 .member-deskr {
   text-align: center;
+  margin-bottom: 8px;
 }
 
-/* Footer */
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.social-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-iris);
+  border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-ocean);
+}
+
+/*============= Customers ============*/
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.customers-item {
+  flex-basis: calc((100% - 24px * 5) / 6);
+}
+.customers-link {
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light-slate);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--color-ocean);
+}
+
+/*============= Footer ============*/
 
 .gen-info {
   background-color: var(--color-navy-blue);
@@ -333,6 +385,10 @@ body {
   padding-bottom: 100px;
 }
 
+.footer-flex {
+  display: flex;
+  gap: 120px;
+}
 .info-logo {
   font-family: var(--logo-font, sans-serif);
   color: var(--color-iris);
@@ -352,6 +408,22 @@ body {
 .push-text {
   max-width: 264px;
   color: var(--color-cloud);
+}
+
+.media-text {
+  font-weight: 500;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.gen-info .socials {
+  justify-content: start;
+  gap: 16px;
+}
+
+.gen-info .social-link:hover,
+.gen-info .social-link:hover {
+  background-color: var(--color-green);
 }
 
 /* Portfolio Main */
@@ -396,8 +468,20 @@ body {
   border-top: none;
 }
 
+.project-card-info:hover,
+.project-card-info:focus {
+  border-color: var(--color-cloud);
+}
+
 .example-item {
   color: inherit;
+  display: block;
+}
+
+.example-item:hover,
+.example-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .example-name {
@@ -414,4 +498,6 @@ body {
 .btn-filter:active {
   color: var(--color-white);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
